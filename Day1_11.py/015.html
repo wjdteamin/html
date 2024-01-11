@@ -1,0 +1,39 @@
+<!DOCTYPE html> <!--웹 브라우저에게 문서의 종류와 버전(DOCTYPE)을 알려준다.-->
+<!-- 
+    태그의 부가정보를 속성이라고 한다.
+    html태그의 lang속성은 이문서를 작성한 언어를 지정한다.
+    lang속성은 시각 장애인을 위한 속성 -> 웹접근성
+-->
+
+<html lang="ko">
+<head>
+    <!-- character set(문자집합)이 utf-8이어야 한글이 정상 -->
+    <meta charset="UTF-8">
+    <!--
+        휴대폰에서 웹사이트를 보기위해 화면을 확대, 축소하는 설정이다.
+        요즘은 휴대폰이 발전해서 의미가 없다.
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>HTML은 HyperText Markup Language의 약자</p>
+    <p>HyperText는 링크걸린 문서를 말한다.</p>
+    <a href="http://www.naver.com" target="_blank" title="네이버로">네이버로</a>
+    <!--
+        target="_blank"은 새창으로 넘어가는 것이다. 
+        여기서 title은 도우말같은 의미다. 
+        태그만으로는 기능을 못할 수 있다. 그래서 속성이 와야 기능을 제공하는 경우도 있다.
+        주소를 시작할 때는 http://로 시작해야한다. 
+    -->
+    <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fcafefiles.naver.net%2FMjAyMDAxMThfMTA2%2FMDAxNTc5MzU1OTM1ODM3.3aI9Ch-yYBJ9yAsn3cC1SEz8ZYmU6c6wqvsPr84Trqsg.UZgl7RDduDU4KgbMupfKYUID2-U5G09iI6Ce-kjcyeog.JPEG%2FexternalFile.jpg&type=sc960_832" alt="">   
+    <!--
+        사진의 이름을 가지고 온 것이다.
+        alt도 웹접근성 속성 - 사진이 나오지 않을때, alt로 지정해준 제목이 나온다.
+    -->
+
+    <!--소녀의 이미지를 너비 150px로 출력하고 클릭하면 네이버로 이동-->
+    <a href="http://www.naver.com"><img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fcafefiles.naver.net%2FMjAyMDAxMThfMTA2%2FMDAxNTc5MzU1OTM1ODM3.3aI9Ch-yYBJ9yAsn3cC1SEz8ZYmU6c6wqvsPr84Trqsg.UZgl7RDduDU4KgbMupfKYUID2-U5G09iI6Ce-kjcyeog.JPEG%2FexternalFile.jpg&type=sc960_832" alt="" width="150px">   
+    </a>
+</body>
+</html>
