@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 다른 사라미 만든 css를 가져온다. 그게 link<태그>다.-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        #hell{
+            background-color: red;
+        }
+        #target{
+            color: red;
+        }
+        .fa-apple, .fa-thumbs-o-up {
+            color: red;
+            font-size: 3em; 
+            /* 300px를 의미한다. */
+        }
+
+        /*
+            태그 선택자 < 클래스 선택자 < 아이디 선택자
+
+            id는 하나만 잡는 것이다. -> #
+            class는 여러개 잡는 것이다. -> .
+            태그는 전체를 잡는 것이다. -> <> 
+
+        */
+    </style>
+</head>
+<body>
+    <p id="target">우리나라 좋은나라</p>
+    <p id="target">우리나라 좋은나라</p>
+    <p>우리나라 좋은나라</p>
+
+
+    <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+    <i class="fa fa-apple" aria-hidden="true"></i>
+    <!--
+        class 여러개를 걸려면 공백을 가지고 지정한다. 
+
+        아이디는 요소 1개, 클래스는 여러개
+
+    -->
+</body>
+</html>

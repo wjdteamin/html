@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자</title>
+    <link rel="stylesheet" href="013.css">
+    <!--내부(internal) css를 외부(external) css로 분리-->
+    <style>
+        /* 태그선택자(1), 클래스 선택자(10), 아이디 선택자(100) 
+            우선순위가 1, 10, 100이라는 의미*/
+        /* p{
+            font-weight: bold;
+        }
+        .underline{
+            밑줄 
+            text-decoration: underline;
+            color: red;
+        }
+         span중에서 클래스가 underline인 거
+        우선순위 11 (1+10)
+        띄워쓰기하면 부모, 자식이 된다. 
+        span.underline{
+            text-decoration: none;
+        }
+        #target{
+            color: yellow;
+        }
+        */
+
+        /* 전체 선택자 : 우선 순위 0. css초기화(reset) */
+        /* * {margin: 0;} 
+        .color_red{
+            color: red;
+        }*/
+
+    </style>
+</head>
+<body>
+    <!-- <p>우리나라 좋은나라</p>
+    <p class="underline" id="target">우리나라 좋은나라</p>
+    <p>우리나라 좋은나라</p>
+    <p class="underline">우리나라 좋은나라</p>
+    <p>우리나라 좋은나라</p>
+    <span class="underline">연습</span> -->
+
+    <!--
+        html 작성자
+        css, 그래픽 : web 퍼블리셔
+        자바스크립트 : frontend 웹 프로그래밍
+    -->
+
+    <div>
+        <p>우리나라 좋은나라 1</p>
+        <p>우리나라 좋은나라 2</p>
+    </div>
+
+    <div>
+        <p>우리나라 좋은나라 3</p>
+        <p class="color_red">우리나라 좋은나라 4</p>
+    </div>
+
+    <!-- 
+        요약정리
+        우선순위는 태그 < class < id 순으로 되어있다.
+        태그는 같은 태그면 다 포함시키는 것이다.
+        class는 여러개를 선택할 수 있다.
+        id는 한개만 가능하다. -> 같은 id는 페이지에 한개만 사용할 수 있다.
+
+        보통 class 선택자를 많이 사용한다. 그런데 먹히지 않으면 id를 사용하기도 한다.
+
+        그리고 css로 파일을 만들면 그 폴더에 모든 파일에 적용할 수 있다.
+
+
+     -->
+</body>
+</html>
