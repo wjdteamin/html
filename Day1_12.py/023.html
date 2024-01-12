@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,td{
+            border: 1px solid black;
+            /* 선을 합치는 것 */
+            border-collapse: collapse; 
+        }
+        table{
+            width: 600px;
+            /* text-align: center; */
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <!-- 이걸 하지 않으면 알아서 조절해서 이걸로 하지 않게 해준다. -->
+        <colgroup>
+            <!-- 열 하나씩을 의미한다. -->
+            <col width="100px"> 
+            <col width="300px">
+            <col width="200px">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>번호</th><th>할일</th><th>등록일</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>자바공부</td>
+                <td>2024-01-12</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>놀아라</td>
+                <td>2024-01-12</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+
+<!--
+    semantic 의미를 가진다. 
+    tbody가 무조건 생성된다.
+
+    thead는 제목영역
+    tbody는 table의 본문이다. -> 내용영역
+    tfoot 
+    tr은 가로  행 
+    td는 세로  열
+
+
+-->
