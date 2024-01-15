@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>기초 선택자 정리</title>
+        <style>
+            * {/* 전체 선택자. 우선순위 0이고 기본 css 지정 */ margin: 0;}
+            div{
+                /*태그 선택자. 우선순위 1. 단독 사용 금지*/
+                font-size: 0.8em;
+            }
+
+            .red{
+                /*우선 순위 10*/ color: red;
+            }
+            /*div.red는 
+            div중에서 .red가 걸리 놈*/
+            div.red{color: rgb(50, 50, 109);}
+
+            div .red{    
+                /*하위 선택자 : div의 자식중에 .red가 걸린놈*/
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+        <body>
+            <div id="me">
+                <p class="red">나도 자식이다.</p>
+                <div class="red">자식</div>
+                <div>
+                    <div>손주</div>
+                </div>
+            </div>
+        </body>
+</html>

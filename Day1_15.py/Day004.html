@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 가장 처음은 위에서 아래를 왼쪽에서 오른쪽으로 바꾸는 것
+            보통 레이아웃을 잡는 방법은 inline-block을 자주 사용한다.
+        */
+
+        /*  a,b   a와 b(나열)
+            a b   a에 소속된 b(하위 선택자)
+        */
+
+        .menu div{
+            display: inline-block;
+            border : 3px solid skyblue;
+            width: 150px;
+            text-align: center;
+            height: 40px;
+            /*내용이 한줄일때 수직 가운데 정렬*/
+            line-height: 40px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div>학원소개</div>
+        <div>교육과정</div>
+        <div>취업지원센터</div>
+        <div>고객센터</div>
+    </div>
+       
+    <div>
+        <h1>추워</h1>
+        <div>겁나 추워</div>
+    </div>
+    
+</body>
+</html>

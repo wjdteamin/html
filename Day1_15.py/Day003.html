@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display 속성 : block, inline, inline-block(너비가 적용되고, 한줄에 여러개가 배치 가능하다.)</title>
+    <style>
+        div{border: 1px solid red; width: 100px;}
+        span{border: 1px solid blue; width: 50px;}
+        div, span{display: inline-block;}
+    </style>
+</head>
+<body>
+    <!-- 한줄을 차지한다. -->
+    <div>우리나라</div> 
+    <div>우리나라</div> 
+
+    <!-- 내용만큼만 차지한다. 너비가 적용되지 않는다.-->
+    <span>우리나라</span>
+    <span>우리나라</span>
+
+    <!--
+        block은 너비를 적용할 수 있지만, 위가 남는다고 올라 올 수 없다.
+        inline은 너비를 적용할 수 없다. 
+    -->
+</body>
+</html>
