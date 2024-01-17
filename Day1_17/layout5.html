@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* box-sizing: border-box는 높이와 너비를 border에 주는 것을 
+        따로 계산하는 것이 아닌 한번에 같이 계산하는 것이다. */
+      }
+      ul li {
+        width: 100px;
+        border: 1px solid skyblue;
+        float: left;
+        list-style: none;
+        border-radius: 10px;
+        margin: 3px;
+        text-align: center;
+        background-color: blue;
+        color: white;
+      }
+      ul li:hover {
+        background-color: violet;
+        cursor: pointer;
+      }
+      nav ul {
+        overflow: hidden;
+      }
+      header {
+        background-color: pink;
+      }
+      #app {
+        width: 500px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .left {
+        float: left;
+      }
+      .right {
+        float: right;
+      }
+      section {
+        float: left;
+      }
+      footer {
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <header>헤더</header>
+      <nav>
+        <ul>
+          <li>홈</li>
+          <li>로그인</li>
+          <li>소개</li>
+          <li>인사말</li>
+        </ul>
+      </nav>
+      <main>
+        <aside class="left">광고</aside>
+        <section>본문</section>
+        <aside class="right">광고</aside>
+      </main>
+      <footer>꼬리말</footer>
+    </div>
+  </body>
+</html>
