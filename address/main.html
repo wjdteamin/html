@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>루트페이지</title>
+  </head>
+  <body>
+    <!--
+        라이브서버에서 실행했을 때 주소
+        http://127.0.0.1:5500/address/main.html - 절대주소
+        근데 이렇게 작성하면 안된다. 나중에 서버 바뀌면 에러남. 그냥 /address/main.html로 해야한다.
+        호환성때문에 그렇다. 보통
+
+        그럼 스프링 mvc에서 실행했다면 
+        http://127.0.0.1:8081/html/address/main.html
+        /address/main.html으로 적으면 된다. 호환성때문에
+
+
+        http://127.0.0.1:5000
+        1523
+        8081
+    -->
+
+    <h1>상대주소</h1>
+    <a href="소개/isa.html">소개로</a>
+    <!-- 자신을 중심으로 위치를 생각하면 된다.  -->
+    <!-- 위치바뀌면 다 바꿔야한다. -->
+    <h1>절대주소</h1>
+    <a href="/address/소개/isa.html">소개로</a>
+    <!-- 
+        절대주소는 폴더까지 다 작성해야한다. 
+
+                http://127.0.0.1:5500/address/소개/isa.html
+                내 위치와 상관없이 정해져있다.
+     -->
+  </body>
+</html>
