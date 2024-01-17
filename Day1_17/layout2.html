@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>시맨틱 태그를 이용한 시맨틱 마크업</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      #app {
+        width: 1000px;
+        margin: 0 auto;
+        /* text-align: center; */
+        border: 1px solid skyblue;
+      }
+      /* width을 1000px를 주고 border를 주면 1002이 된다. 그래서 box-sizing : border-box를 주면 1000px가 된다.  */
+      header,
+      nav,
+      footer {
+        height: 50px;
+        border: 1px solid red;
+      }
+      /* 근데 main은 높이를 줄 수 없다. 왜냐하면 길면 길고, 짧으면 짧아서 */
+
+      aside {
+        height: 200px;
+        width: 100px;
+        background-color: deeppink;
+      }
+      .left {
+        float: left;
+      }
+      section {
+        width: 798px;
+        float: left;
+      }
+      .right {
+        float: right;
+      }
+      main {
+        overflow: hidden;
+      }
+      section {
+        min-height: 600px;
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <header>로고</header>
+      <nav>메인 메뉴</nav>
+      <main>
+        <aside class="left">왼쪽</aside>
+        <section>
+          특수문자 작다 : &lt; <br />
+          공백 : &nbsp;
+        </section>
+        <aside class="right">오른쪽</aside>
+      </main>
+      <footer>
+        <!--html entity code : 특수문자 넣는 방법-->
+        copyright &copy:2024
+      </footer>
+    </div>
+  </body>
+</html>

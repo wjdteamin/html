@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      #app {
+        border: 1px solid skyblue;
+        width: 1000px;
+        margin: 0 auto;
+      }
+      header,
+      nav,
+      footer {
+        border: 1px solid rebeccapurple;
+      }
+      .left {
+        float: left;
+        background-color: pink;
+        width: 100px;
+        height: 200px;
+      }
+      .right {
+        float: right;
+        background-color: pink;
+        width: 100px;
+        height: 200px;
+      }
+      section {
+        width: 798px;
+        background-color: lawngreen;
+        float: left;
+        min-height: 800px;
+      }
+      main {
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <header>로고</header>
+      <nav>메인메뉴</nav>
+      <main>
+        <aside class="left">왼쪽</aside>
+        <!-- 내용 -->
+        <section>
+          특수문자 작다 : &lt;<br />
+          공백 : &nbsp;
+        </section>
+        <aside class="right">오른쪽</aside>
+      </main>
+      <footer>
+        <!--html entity code : 특수문자 넣는 방법-->
+        copyright &copy:2024
+      </footer>
+    </div>
+  </body>
+</html>
