@@ -1,0 +1,40 @@
+<html>
+  <head> </head>
+  <body>
+    <form action="http//locatlhost:5000/sample1" method="get">
+      <!--
+            id 속성 : 프론트(css, js)에서 사용하는 이름
+            name 속성 : 백에서 사용하는 이름
+
+            http://localhost:5000/sample1?irum=spring&password=1234
+
+
+            보통은 이름은 같은 것을 쓴다. 하지만 내용은 전혀 다르다.
+
+            name이 없으면 서버로 전달하지 못한다.
+
+            form의 내용을 전달하는 것을 submit이라고 한다 submit을 하기 위해서는 
+            무조건 name이 필요하다. 값을 넘기기 위해서는 name이 있어야한다.
+        -->
+      <input name="irum" id="irum" value="spring" /><br />
+      <input name="password" value="1234" /><br />
+      <input id="nai" value="20" /><br />
+      <button>보내기</button>
+
+      <!--
+        input은 form안에서 사용해야한다. 
+      -->
+    </form>
+    <!--
+            front와 back은 둘 다 백에서 운영할 수 있다. (MVC 또는 model2라고한다. )
+            -only web
+            -front -> back : form
+            -back -> front : back기술마다 다르다 
+
+            여기는 서로 대등한 관계이다. (rest 방식)
+            front와 back을 별개로 운영할 수 있다.
+            -프론트와 백을 분리
+            (web, 안드로이드, ios 프론트를 백과 동시에 개발할 수 있다.)
+        -->
+  </body>
+</html>
